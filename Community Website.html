@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Notice Board</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for a clean look */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 min-h-screen flex flex-col">
+
+    <!-- Header Section -->
+    <header class="bg-indigo-700 text-white p-6 shadow-md rounded-b-lg">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-extrabold mb-2">Community Notice Board</h1>
+            <p class="text-indigo-200 text-lg">Your hub for local updates and announcements</p>
+        </div>
+    </header>
+
+    <!-- Navigation Bar (Categories) -->
+    <nav class="bg-indigo-600 text-white p-3 shadow-md">
+        <div class="container mx-auto flex justify-center space-x-6">
+            <a href="#announcements" class="hover:text-indigo-200">Announcements</a>
+            <a href="#events" class="hover:text-indigo-200">Events</a>
+            <a href="#lost-found" class="hover:text-indigo-200">Lost & Found</a>
+            <a href="#services" class="hover:text-indigo-200">Services</a>
+            <a href="#contacts" class="hover:text-indigo-200">Contacts</a>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main class="container mx-auto p-6 flex-grow">
+
+        <!-- Announcements Section -->
+        <section id="announcements" class="mb-10">
+            <h2 class="text-3xl font-bold text-indigo-800 mb-6 text-center">Announcements</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Notice Card 1: Community BBQ (now in Announcements) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200">
+                    <h3 class="text-2xl font-bold text-indigo-800 mb-3">Annual Community Mela!</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Join us in our annual community mela! Enjoy delicious food, fun games, and great company.
+                        Bring your family and friends to share the fun.
+                    </p>
+                    <div class="text-sm text-gray-500">
+                        <p class="mb-1"><strong>Date:</strong> Saturday, August 17th</p>
+                        <p class="mb-1"><strong>Time:</strong> 12:00 PM - 4:00 PM</p>
+                        <p><strong>Location:</strong> Ram Lila Ground</p>
+                    </div>
+                </div>
+
+                <!-- Notice Card 2: Neighborhood Clean-up (now in Announcements) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200">
+                    <h3 class="text-2xl font-bold text-green-700 mb-3">Neighborhood Clean-up Day</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Let's work together to keep our neighborhood beautiful! Volunteers are needed for litter pick-up,
+                        gardening, and general tidying. Gloves and bags will be provided.
+                    </p>
+                    <div class="text-sm text-gray-500">
+                        <p class="mb-1"><strong>Date:</strong> Sunday, August 25th</p>
+                        <p class="mb-1"><strong>Time:</strong> 9:00 AM - 1:00 PM</p>
+                        <p><strong>Meeting Point:</strong> Community Center Entrance</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" class="mb-10">
+            <h2 class="text-3xl font-bold text-purple-800 mb-6 text-center">Events</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Notice Card 3: Yoga Classes (now in Events) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200">
+                    <h3 class="text-2xl font-bold text-purple-700 mb-3">New Evening Yoga Classes</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Relax and rejuvenate with our new evening yoga sessions. Suitable for all levels, from beginners
+                        to experienced practitioners. Please bring your own mat.
+                    </p>
+                    <div class="text-sm text-gray-500">
+                        <p class="mb-1"><strong>Days:</strong> Mondays & Wednesdays</p>
+                        <p class="mb-1"><strong>Time:</strong> 6:30 PM - 7:30 PM</p>
+                        <p><strong>Location:</strong> Community Hall, Room 3</p>
+                    </div>
+                </div>
+
+                <!-- Notice Card 4: Book Club Meeting (now in Events) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200">
+                    <h3 class="text-2xl font-bold text-red-700 mb-3">Book Club: Next Meeting</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Our next book club meeting will discuss "The Midnight Library" by Matt Haig.
+                        New members are always welcome! Come prepared to share your thoughts.
+                    </p>
+                    <div class="text-sm text-gray-500">
+                        <p class="mb-1"><strong>Date:</strong> Tuesday, September 3rd</p>
+                        <p class="mb-1"><strong>Time:</strong> 7:00 PM</p>
+                        <p><strong>Location:</strong> Local Library Meeting Room</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lost & Found Section -->
+        <section id="lost-found" class="mb-10">
+            <h2 class="text-3xl font-bold text-orange-800 mb-6 text-center">Lost & Found</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Notice Card 5: Lost Pet Alert (now in Lost & Found) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200">
+                    <h3 class="text-2xl font-bold text-orange-700 mb-3">Lost Dog - "Buddy"</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Our beloved dog, Buddy, went missing near Gaur City Mall yesterday. He is a small,
+                        brown beagle mix with a blue collar. Please call if you see him!
+                    </p>
+                    <div class="text-sm text-gray-500">
+                        <p class="mb-1"><strong>Contact:</strong> Raj Kumar</p>
+                        <p class="mb-1"><strong>Phone:</strong> 8545602123</p>
+                        <p><strong>Reward:</strong> Offered for his safe return</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section (New) -->
+        <section id="services" class="mb-10">
+            <h2 class="text-3xl font-bold text-blue-800 mb-6 text-center">Services & Opportunities</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Notice Card 6: Volunteer Opportunity (now in Services) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200">
+                    <h3 class="text-2xl font-bold text-blue-700 mb-3">Volunteers Needed for Senior Support</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        We are looking for compassionate volunteers to assist with our senior support program.
+                        Tasks include friendly visits, grocery shopping, and light errands.
+                    </p>
+                    <div class="text-sm text-gray-500">
+                        <p class="mb-1"><strong>Commitment:</strong> Flexible hours</p>
+                        <p class="mb-1"><strong>Training:</strong> Provided</p>
+                        <p><strong>Contact:</strong> Crossing Republik, Golf Course</p>
+                    </div>
+                </div>
+                <!-- Example Service Card -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200">
+                    <h3 class="text-2xl font-bold text-teal-700 mb-3">Local Handyman Services</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Need help with home repairs? We offers reliable and affordable solutions
+                        for plumbing, electrical, carpentry, and more. Free estimates!
+                    </p>
+                    <div class="text-sm text-gray-500">
+                        <p class="mb-1"><strong>Contact:</strong> Harsh Mishra</p>
+                        <p class="mb-1"><strong>Phone:</strong> 9610455560</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Important Contacts Section -->
+        <section id="contacts" class="mb-10 bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Important Community Contacts</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-2">Society Office</h3>
+                    <p class="text-gray-700 mb-1"><strong>Phone:</strong> 91717789</p>
+                    <p class="text-gray-700 mb-1"><strong>Email:</strong> office@community.org</p>
+                    <p class="text-gray-700"><strong>Hours:</strong> Mon-Fri, 9 AM - 5 PM</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Security Desk</h3>
+                    <p class="text-gray-700 mb-1"><strong>Phone:</strong> 874695425(24/7)</p>
+                    <p class="text-gray-700"><strong>Emergency:</strong> Dial 112</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-red-700 mb-2">Maintenance Helpline</h3>
+                    <p class="text-gray-700 mb-1"><strong>Phone:</strong> 8643000752</p>
+                    <p class="text-gray-700"><strong>Email:</strong> maintenance@community.org</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-purple-700 mb-2">Community Events Coordinator</h3>
+                    <p class="text-gray-700 mb-1"><strong>Phone:</strong> 8545623142</p>
+                    <p class="text-gray-700"><strong>Email:</strong> events@community.org</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white p-4 mt-8 rounded-t-lg">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; 2025 Community Notice Board. All rights reserved.</p>
+            <p>Designed with ❤️ for our community.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
